@@ -23,7 +23,7 @@
 
         var data = JSON.stringify(queryInfo);
 
-        $.post("http://localhost:7071/api/CosmosDBQuery", data, function(resp) {
+        $.post("https://cosmosdbquery.azurewebsites.net/api/CosmosDBQuery?code=b0dC8AhGXaqOhRIrOOMXGGlnd0fcOGnekGEXd8MkKx10cVdXQMoCnQ==", data, function(resp) {
             tableData = [];
             console.log("Cosmos db result is " + resp);            
             var respObj = JSON.parse(resp);
@@ -69,7 +69,7 @@
 
         var data = JSON.stringify(queryInfo);
 
-        $.post("http://localhost:7071/api/CosmosDBQuery", data, function(resp) {
+        $.post("https://cosmosdbquery.azurewebsites.net/api/CosmosDBQuery?code=b0dC8AhGXaqOhRIrOOMXGGlnd0fcOGnekGEXd8MkKx10cVdXQMoCnQ==", data, function(resp) {
             tableData = [];
             console.log("Cosmos db result is " + resp);
             
